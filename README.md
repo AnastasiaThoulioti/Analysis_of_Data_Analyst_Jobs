@@ -82,7 +82,7 @@ plt.show()
 
 ### Results
 
-![Visualization of Top Skills for Data Roles](Project\images\skill_demand_all_data_roles.png)*Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
+![Visualization of Top Skills for Data Roles](Project/images/skill_demand_all_data_roles.png)*Bar graph visualizing the salary for the top 3 data roles and their top 5 skills associated with each.*
 
 ### Insights
 
@@ -113,7 +113,7 @@ plt.show()
 
 ### Results
 
-![Trending Top Skills for Data Analysts in Greece](Project\images\Skill_Trend_DA.png) 
+![Trending Top Skills for Data Analysts in Greece](Project/images/Skill_Trend_DA.png) 
 *Graph visualizing the trending top skillss for data analysts in Greece in 2025.*
 
 
@@ -137,7 +137,7 @@ View my notebook with detailed steps here: (Project\4_Salary Analysis.ipynb)
 #### Visualize Data
 
 ```python
-sns.boxenplot(data=df_GR_top6, x="salary_year_avg", y="job_title_short", order=job_order)
+sns.boxplot(data=df_GR_top6, x="salary_year_avg", y="job_title_short", order=job_order)
 
 ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
 plt.gca().xaxis.set_major_formatter(ticks_x)
@@ -146,16 +146,18 @@ plt.show()
 ```
 #### Results
 
-![Salary Distributions of Data Jobs in Greece](Project\images\Salary_Boxplot.png)
+![Salary Distributions of Data Jobs in Greece](Project/images/Salary_Boxplot.png)
 *Box plot visualizing the salary distributions for the top 6 data jobs titles.*
 
 #### Insights
 
--Salary ranges vary substantially across job titles in Greece. Roles such as Senior Data Scientist and Machine Learning Engineer show the highest earning potential, with salaries extending toward the upper end of the chart. This indicates strong demand for advanced technical expertise and industry experience.
+-Machine Learning Engineer (MLE) maintains the highest median salary (approximately $120K), confirming that specialized engineering roles requiring advanced statistical and programming knowledge are typically the highest-compensated.Data Analyst (DA) and Senior Data Scientist (SDS) roles follow closely with high median salaries (around $110K). This indicates strong value placed on business-oriented data roles and clear rewards for seniority.
 
--Senior Data Engineer and Senior Data Scientist roles show a considerable number of outliers on the higher end of the salary spectrum, suggesting that exceptional skills or circumstances can lead to high pay in these roles. In contrast, roles such as Data Analyst and Data Scientist exhibit more compact salary distributions with fewer extreme outliers, indicating more predictable salary expectations compared to senior roles.
+-The Data Scientist (DS) and Data Engineer (DE) roles show the most compact salary distributions. Their IQR boxes are the narrowest (approximately $80K to $110K for DS), suggesting a highly standardized compensation structure for mid-level professionals in these two core technical roles.
 
--The median salaries increase with the seniority and specialization of the roles. Senior roles (Senior Data Scientist, Senior Data Engineer) not only have higher median salaries but also larger differences in typical salaries, reflecting greater variance in compensation as responsibilities increase.
+-Conversely, Data Analyst and Software Engineer (SWE) roles exhibit the widest salary dispersion. This wide range (IQR spanning ~$50K to $60K) implies that job experience, company sector, and specific responsibilities cause the largest swings in compensation for these two positions.
+
+-All roles show earning potential extending to or near the $200K mark, primarily driven by the MLE and SDS whiskers, which reach the furthest right. This demonstrates that specialized expertise and senior leadership are rewarded significantly across the data field.he general salary floor for the middle 50% of the market (the start of the IQR box) appears to be around $80K for most data roles (DA, DS, DE, SDS), though the Software Engineer role has a slightly lower starting point (around $70K).
 
 ### Highest Paid & Most Demanded Skills for Data
 
@@ -180,7 +182,7 @@ plt.show()
 
 Here's the breakdown of the highest-paid & most in-demand skills for data analysts in Greece:
 
-![The Highest Paid & Most In-Demand Skills for Data Analysts in Greece](Project\images\Highest_paid_and_most_in_demand_skills_for_data_analysts.png)
+![The Highest Paid & Most In-Demand Skills for Data Analysts in Greece](Project/images/Highest_paid_and_most_in_demand_skills_for_data_analysts.png)
 *Two separate bar graphs visualizing the highest paid skills and most in-demand skills for data analysts in Greece.*
 
 #### Insights
@@ -208,7 +210,7 @@ plt.show()
 
 #### Results
 
-![Most Optimal Skills for Data Analysts in Greece](Project\images\Most_Optimal_Skills_for_Data_Analyst_in_Greece.png)
+![Most Optimal Skills for Data Analysts in Greece](Project/images/Most_Optimal_Skills_for_Data_Analyst_in_Greece.png)
 *A scatter plot visualizing the most optimal skills (high paying & high demand) for data analysts in Greece.*
 
 #### Insights
