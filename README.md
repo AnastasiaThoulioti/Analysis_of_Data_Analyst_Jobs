@@ -51,7 +51,7 @@ df['job_skills'] = df['job_skills'].apply(lambda x: ast.literal_eval(x) if pd.no
 
 ### Filter Greece Jobs
 
-To focus my analysis on the Greek job market, I apply filters to the dataset, narrowing down to roles based in the United States.
+To focus my analysis on the Greek job market, I apply filters to the dataset, narrowing down to roles based in Greece.
 
 ```python
 df_GR = df[df['job_country'] == 'Greece']
